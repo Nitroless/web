@@ -145,7 +145,7 @@ body, html {
 
 #searchBox.hide {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translate(-50%, -50px);
 }
 
 .inputTextField {
@@ -215,11 +215,12 @@ body, html {
 .descriptionNitroless {
   background-color: var(--accent-color);
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   border-radius: 10px;
-  margin-top: -50px;
-  margin-bottom: 20px;
+  margin: -50px 10px 20px;
   width: 80%;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .descriptionNitroless #headingAbout {
@@ -255,11 +256,13 @@ body, html {
 }
 
 .nitrolessTeam .devContainer .devInfo .devName {
-  font-weight: 900;
+  font-family: Uni Sans;
+  font-size: 20px;
 }
 
 .nitrolessTeam .devContainer .devInfo .devDescription {
   font-weight: 300;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -320,9 +323,6 @@ body, html {
         width: 80%;
         z-index: 1;
         transition: 250ms ease;
-    }
-    #searchBox.headerHidden {
-      transform: translate(-50%, -90px);
     }
     #searchBox:before, .header:before {
         content: "";

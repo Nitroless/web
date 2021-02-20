@@ -48,7 +48,7 @@ var aboutStuff = {
         let nitrolessDescription = new domMaker.init({
                 type: "div",
                 className: "descriptionNitroless",
-                innerHTML: "<div id='headingAbout'>Nitroless</div><br>A Project where you can use any custom emoji on Discord servers without Nitro!<br>Just tap the emoji and paste it in the discord chat."
+                innerHTML: "<div id='headingAbout'>About</div><br>A Project where you can use any custom emoji on Discord servers without Nitro!<br><br>Just tap the emoji and paste it in the discord chat."
             }),
             team = new domMaker.init({
                 type: "div",

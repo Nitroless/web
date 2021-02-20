@@ -95,19 +95,6 @@ var loadPage = {
                 loadPage.paginator(loadPage.emotes, loadPage.page_flag);
             }
         }
-        var currentScrollPos = window.pageYOffset;
-        if (this.prevScrollpos > currentScrollPos || currentScrollPos == 0) {
-            document.getElementById("searchBox").classList.remove("headerHidden");
-            document.getElementById("headerContainer").classList.remove("hide");
-        } else {
-            document.getElementById("searchBox").classList.add("headerHidden");
-            document.getElementById("headerContainer").classList.add("hide");
-            if(document.getElementById("sidebarContainer").classList.contains("open")) {
-                document.getElementById("sidebarContainer").classList.remove("open");
-                loadPage.sidebarOpener.classList.toggle("open");
-            }
-        }
-        this.prevScrollpos = currentScrollPos;
     },
     openSidebar: function(e) {
         e.target.classList.toggle("open");

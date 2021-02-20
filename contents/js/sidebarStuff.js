@@ -9,6 +9,8 @@ var sidebarStuff = {
     init: function() {
         this.sidebarContainer.addEventListener("click", (e) => {
             if(e.target.classList.contains("sidebarButtons")) {
+                document.getElementById("sidebarContainer").classList.toggle("open");
+                loadPage.sidebarOpener.classList.toggle("open");
                 let searchbar = document.getElementById("searchBox");
                 if(searchbar.classList.contains("hide")) searchbar.classList.remove("hide");
                 loadPage.content.innerHTML = "";
